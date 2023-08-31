@@ -80,8 +80,8 @@ x = s.map((e,count)=> {
     y[e]=z;
     return y;
 })
-console.log(x)
-
-///5.
+console.log(x);
 
 
+// /
+///jeeva
