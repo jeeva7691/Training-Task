@@ -82,4 +82,6 @@ x = s.map((e,count)=> {
 })
 console.log(x)
 
+///5.
+
 
