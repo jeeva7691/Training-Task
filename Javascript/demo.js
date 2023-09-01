@@ -28,5 +28,5 @@ cap = a.map(e => {
     x={ };
     x[e.category] = e.name;
     return x;
-})
+}).filter(e => x.category != e.category)
 console.log(cap)

@@ -116,3 +116,11 @@ cap = a.map(e => {
     return x;
 })
 console.log(cap) ///Still have to complete
+
+
+
+// 6.Write a function that takes an array of strings and returns a new array with only the unique strings. Use the Map object to accomplish this. Not completed
+
+
+//7. Write a function that takes an array of numbers and returns an object where the keys are the numbers and the values are arrays of their prime factors. Use the Map object to accomplish this.
+
