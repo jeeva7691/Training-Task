@@ -1,13 +1,12 @@
 //2. Write a function that takes an array of objects with a price property and returns the total cost of all the objects. Use the reduce method to accomplish this.
-let tcost;
-({cost} = [
+a = [
     {
         'product':'Android',
-        'cost':19000,
+        'cost':19000
     },
     {
         'Product':'Washing-Machine',
-        'cost':31000,
+        'cost':31000
     },
     {
         'product':'Refrigerator',
@@ -15,10 +14,9 @@ let tcost;
     },
     {
         'product':'Smart-Tv',
-        'cost':18000,
+        'cost':18000
     }
-]);
-console.log(tcost);
-console.log(cost,product);
-a.reduce(e =>
-    e.cost + e.cost); // 
+];
+
+tcost=a.reduce((e,c) =>e+c.cost,0);
+ console.log(tcost);

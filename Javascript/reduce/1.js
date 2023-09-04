@@ -6,4 +6,4 @@ sum = a.reduce((acc,val) =>
     return acc + val
 }
 );
-console.log("The sum of array iss",sum)
+console.log("The sum of array is",sum)

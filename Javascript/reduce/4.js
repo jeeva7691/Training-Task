@@ -25,5 +25,7 @@ a = [
     }
 ]
 
-filted = a.filter(e => tcost = e.cost * e.quantity)
-console.log(tcost);
+filted = a.reduce((c,e)=> {
+    return c + e.cost * e.quantity
+},0)
+console.log(filted);
