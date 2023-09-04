@@ -4,10 +4,11 @@ arr = [
     {'name' : 'jeeva','email':'jeevad807@gmail.com'},
     {'name' : 'arun','email':'arun@yahoo.com'},
     {'name' : 'arun babu','email':'arunbabu@gmail.com'},
-    {'name' : 'srikanth','email':'srikanth@yahoo.in'}
+    {'name' : 'srikanth','email':'srikanth@gmail.in'}
 ];
-emai = '@gmail.com';
+emai = '@yahoo.com';
 newarr = arr.filter(e => {
-    return e.email == e.email.emai}
+    return e.email.slice(e.email.indexOf('@')) == emai
+}
 );
-console.log(newarr);
+console.log(newarr); // not completed Doubt ??
