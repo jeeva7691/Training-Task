@@ -17,10 +17,11 @@ a = [
         'name':'Akshay',
         'age':20,
     },
-]
-newa = a.reduce((e,i,{age}) => 
+];
+newa = a.reduce((acc,val) => 
 {
-    console.log(e.age,i.age); //Incomplete
-});
-//console.log(newa);
-
+    acc = (acc  + val.age) / 2;
+   
+    return acc;
+},0);
+console.log("the Average age is ",newa.toFixed(2));

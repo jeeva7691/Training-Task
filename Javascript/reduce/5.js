@@ -29,4 +29,4 @@ arr =['Apple','Aerospace','aeroplane','Badminton','Aerospace']
         // //console.log(count);
         //}
     });
-console.log(newar);
+console.log(newar); //Incomplete

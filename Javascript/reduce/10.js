@@ -33,4 +33,13 @@ a = [
     }
 ];
 
+totalcost = a.reduce(e =>{
+    
+   //console.log(e)
+    x = { };
+    x[e.category] = e.cost;
+    return x;
+});
+console.log(totalcost); //Incomplete
+
 
