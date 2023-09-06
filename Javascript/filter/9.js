@@ -11,4 +11,4 @@ newarr = arr.filter(e => {
     return e.email.slice(e.email.indexOf('@')) == emai
 }
 );
-console.log(newarr); // not completed Doubt ??
+console.log(newarr);
