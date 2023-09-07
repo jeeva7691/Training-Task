@@ -2,7 +2,28 @@ body
 {
     background-color:rgb(74, 73, 73);
 }
-.pagewrapper
+.page-wrapper
 {
     margin : 0px auto;
+    width:760px;
+    padding: 0px ;
+}
+.intro
+{
+    color:aliceblue;
+    font-weight:normal;
+    background-image: url("/Sources/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header
+{
+    display: none;
+}
+.preamble
+{
+    margin-top: 500px;
+    background-image: url("/Sources/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
