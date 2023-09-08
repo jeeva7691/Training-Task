@@ -12,18 +12,42 @@ body
 {
     color:aliceblue;
     font-weight:normal;
+
+}
+.intro header{
     background-image: url("/Sources/1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-header
-{
-    display: none;
+    height: 450px;
 }
 .preamble
 {
-    margin-top: 500px;
-    background-image: url("/Sources/2.jpg");
+    /* background-image: url("/Sources/preamble_img.jpg"); */
+    background-image: url("/Sources/2.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
+    width: 650px;
+}
+header h1
+{
+    display:none;
+}
+header h2 
+{
+    display : none;
+}
+.summary > p > a
+{
+    color:aliceblue;
+}
+.summary > p:first-child
+{
+    display: none;
+}
+.summary:nth-child(2)
+{
+    position:absolute;
+    top:1px;
+    font-size:0.6em;
+    font-weight:normal;
 }
