@@ -1,0 +1,117 @@
+.container1 , .container2 ,.container3 , .container4 ,.container5 ,.container6 ,.container7 ,.container8 ,.container9,.container10 ,.container11 ,.container12,.container13 ,.container14 ,.container15 ,.container16 ,.container17 ,.container18 ,.container19 ,.container20 ,.container21 ,.container22
+{
+    height:300px;
+    background-color: antiquewhite;
+    display:flex; 
+    gap:10px;
+    width: 75%;
+}
+h1
+{
+    text-align:center;
+}
+.container1
+{
+    flex-direction: row-reverse;
+}
+.container2{
+    flex-direction: column;
+}
+.container3
+{
+    flex-direction: column-reverse;
+}
+.container4{
+    flex-wrap: nowrap;
+}
+.container5
+{
+    flex-wrap:wrap;
+}
+.container6
+{
+    flex-wrap: wrap-reverse;
+}
+.container7
+{
+    flex-flow: column wrap;
+}
+.container8
+{
+    justify-content: flex-start;
+}
+.container9
+{
+    justify-content: flex-end;
+}
+.container10
+{
+    justify-content: center;
+}
+.container11
+{
+    justify-content: space-between;
+}
+.container12
+{
+    justify-content: space-around;
+}
+.container13
+{
+    justify-content: space-evenly;
+}
+.container14
+{
+    align-items: flex-start;
+}
+.container15
+{
+    align-items: flex-end;
+}
+.container16
+{
+    align-items: center;
+}
+.container17
+{
+    align-items: stretch;
+}
+.container17 div
+{
+    width: 100px;
+    background-color: aqua;
+}
+.container18
+{
+    align-items: baseline;
+}
+.container18 div:first-child
+{
+    padding-top:20px;
+}
+.container19
+{
+    flex-wrap: wrap;
+    align-content:flex-start;
+}
+.container20
+{
+    flex-wrap: wrap;
+    align-content: flex-end ;
+}
+.container21
+{
+    flex-wrap: wrap;
+    align-content: center;
+}
+.container22
+{
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+.container1 div ,.container2 div ,.container3 div , .container4 div ,.container5 div ,.container6 div ,.container7 div ,.container8 div ,.container9 div ,.container10 div ,.container11 div ,.container12 div ,.container13 div ,.container14 div ,.container15 div ,.container16 div ,.container18 div ,.container19 div ,.container20 div ,.container21 div ,.container22 div
+{
+    background-color:aqua;
+    height: 100px;
+    width: 100px; 
+}
