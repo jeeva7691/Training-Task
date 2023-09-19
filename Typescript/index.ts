@@ -173,13 +173,44 @@
 
                 //Dynamic argument function
 
+let num1 : number = 122;
+function sum1(num1 : number,...num2:number[]) : number[]
+{
+        let sum = num2.map( e => e+num1)
+        return sum;    
+}
+console.log(sum1(num1,2,3,4,5));
+
+
+                //Annonymous Function
+
 // let num1 : number = 122;
-// function sum1(num1 : number,...num2:number[]) : number[]
+// console.log(function sum1(num1 : number,num2:number) : number
 // {
-//         let sum=num2.map( e => e+num1)
+//         let sum=num1 + num2;
 //         return sum;    
+// } (9,10));
+
+        //Arrow Function
+
+// let num1 : number = 122;
+// let num2 : number = 12;
+// let num3 = (num1:number,num2:number): number  => {
+   
+//     return num1 + num2;
 // }
-// console.log(sum1(num1,2,3,4,5,));
+// console.log(num3(num1,num2));
+
+ // Tuple Creation
+
+let a:[number,string] = [1,'jeeva']
+console.log(a);
+
+
+
+
+
+
 
  
  
