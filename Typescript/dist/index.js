@@ -145,7 +145,7 @@
 // let num1 : number = 122;
 // function sum1(num1 : number,...num2:number[]) : number[]
 // {
-//         let sum=num2.map( e => e+num1)
+//         let sum = num2.map( e => e+num1)
 //         return sum;    
 // }
 // console.log(sum1(num1,2,3,4,5));
@@ -164,5 +164,62 @@
 // }
 // console.log(num3(num1,num2));
 // Tuple Creation
-let a = [1, 'jeeva'];
-console.log(a);
+// let a:[number,string] = [1,'jeeva']
+// console.log(a);
+// let add=(b:number,c:number):number=> b*c;
+// console.log(add(4,5))
+//class 
+// class Myclass
+// {
+// //     a!:number;  // ! assertion operator
+//        b:number = 2;
+// //        readonly c:number = 3;  //readonly method can change only inside the constructor
+//        constructor()
+//        {
+//         //this.a = 1;
+//         //this.c=20;
+//        }
+// }
+// let o = new Myclass()
+// console.log(o.a); //get method
+// console.log(o.b);
+// o.a=5;            //set method
+// o.b=10;
+// console.log(o.a);
+// console.log(o.b);
+// console.log(o.c);
+//Access methods get and set 
+// class Myclass1
+// {
+//        _val:string ="20";
+//         get val() : string {
+//          console.log("get method");
+//          return this._val;
+//         }
+//         set val(a:string)
+//         {
+//          console.log("set method");
+//          this._val=a;
+//         }
+// }
+// let obj1 = new Myclass1()
+// console.log(obj1.val);  
+// obj1.val="50";
+// console.log(obj1.val);  
+class Myclass1 {
+    constructor() {
+        this._val = "20";
+    }
+    get val() {
+        console.log("get method");
+        return this._val;
+    }
+    set val(a) {
+        console.log("set method");
+        this._val = String(a);
+    }
+}
+let obj1 = new Myclass1();
+console.log(obj1.val); // Not accessible 
+obj1.val = 50;
+console.log(obj1.val);
