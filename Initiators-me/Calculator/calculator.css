@@ -1,27 +1,69 @@
-/* styles.css */
-body {
-    margin: 0;
-    padding: 0;
+body{
+    display: flex;
     height: 100vh;
+    justify-content: center;
+    background-color: white;
+    margin: 0;
+}
+.calci
+{
+    background-color: beige;
+    height: 950px;
+    width: 700px;
+    border: 2px dotted black;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
+.output
+{
+    background-color: aqua;
+    height: 10rem;
+    width: 40rem;
+    margin-top: 50px;
+    border-radius: 16px;
+ 
+}
+.buttscr
+{
+    background-color:#457b9d;
+    background: transparent;
+    height: 600px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    border-radius: 16px;
+    /* border: 10px dashed black; */
+}
+.output input
+{
+    width: 40rem;
+    height: 10rem;
+    text-align: end;
+    border: none;
+    font-size: 25px;
+    border-radius: 16px;
+    justify-content: flex-end;
+    align-items: flex-end;
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%; /* Adjust as needed */
-    max-width: 800px; /* Adjust as needed */
-    height: 60%; /* Adjust as needed */
 }
-
-iframe {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-items: end;
+.btn
+{
+    background-color: #a8dadc;
+    height: 110px;
+    width: 120px;
+    font-size: 2em;
+    border-radius: 16px;
+    box-shadow: red;
+    background: transparent;
+    /* border: none; */
 }
+.btn:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
