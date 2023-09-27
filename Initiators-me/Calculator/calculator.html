@@ -28,32 +28,13 @@
                 <button class="btn" id = "one">1</button>
                 <button class="btn" id="Two">2</button>
                 <button class="btn">3</button>
-                <button class="btn">+</button>
+                <button class="btn" id = "plus"onclick="getInputValue2()">+</button>
                 <button class="btn">0</button>
                 <button class="btn">00</button>
                 <button class="btn">.</button>
-                <button class="btn">=</button>
+                <button class="btn" onclick= getInputValue() >=</button>
             </div>
     </div>
-    <script>
-        function printText() {
-            var textbox = document.getElementById("out");
-            textbox.value = "1";
-        }
-        var button = document.getElementById("one");
-        button.addEventListener("click", printText);
-        function printText1() {
-            var textbox = document.getElementById("out");
-            textbox.value="";
-        }
-        var button = document.getElementById("AC");
-        button.addEventListener("click", printText1);
-        function printText2() {
-            var textbox = document.getElementById("out");
-            textbox.value="2";
-        }
-        var button = document.getElementById("Two");
-        button.addEventListener("click", printText2);
-    </script>
+    <script src="cal.js"></script>
 </body>
 </html>

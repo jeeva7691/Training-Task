@@ -23,6 +23,8 @@ body{
     width: 40rem;
     margin-top: 50px;
     border-radius: 16px;
+    border:none;
+    outline: none;
  
 }
 .buttscr
@@ -46,8 +48,6 @@ body{
     border: none;
     font-size: 25px;
     border-radius: 16px;
-    justify-content: flex-end;
-    align-items: flex-end;
 
 }
 .btn
