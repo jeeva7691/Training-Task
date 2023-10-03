@@ -1,38 +1,56 @@
-function printText() {
-    var textbox = document.getElementById("out");
-    textbox.value = "1";
+function printText(input) 
+{
+    document.getElementById("out").value += input;
 }
-var button = document.getElementById("one");
-button.addEventListener("click", printText);
-function printText1() {
-    var textbox = document.getElementById("out");
-    textbox.value="";
+function printText1()  
+{
+    document.getElementById("out").value = "";
 }
-var button = document.getElementById("AC");
-button.addEventListener("click", printText1);
-function printText2() {
-    var textbox = document.getElementById("out");
-    textbox.value="2";
-}
-var button = document.getElementById("Two");
-button.addEventListener("click", printText2);
-
-function getInputValue() {
-    let inputVal = document.getElementById("out").value;
-    var n1 = Number(inputVal);
-    console.log(n1);
-    // document.getElementById("out").value  = n1 + n2;
-    // console.log(n1 + n2);
-    // out.value="";  
- }
-
-
-function plus(){
+function getinput()
+{
+    let text = document.getElementById("out").value;
+    if(text[0] == '-'){
+        text = '0'+ text;
+    }
+    let numbers = text.match(/\d+/g).reverse();
+    // let num1 = numbers.pop();
+    // let num2 = numbers.pop();
     
-    let inputVal2 = document.getElementById("out").value;
-    var n2 = Number(inputVal2);
-    console.log(n2);
-    // let add = inputval + inputVal;
-    // alert(add);
-
+    let operator = document.getElementById("out").value;
+    let opr = operator.match(/[\+\-\*\/]/g).reverse();
+    
+        
+    while(opr.length != 0)
+    {
+        var oprr = opr.pop();
+        switch(oprr)
+        {
+            case '+' :
+                    var num1 = parseFloat(numbers.pop());
+                    var num2 = parseFloat(numbers.pop());
+                    numbers.push(num1 + num2);
+            break;
+            case '-':
+                var num1 = parseFloat(numbers.pop());
+                var num2 = parseFloat(numbers.pop());
+                numbers.push(num1 - num2);
+            break;
+            case '*':
+                var num1 = parseFloat(numbers.pop());
+                var num2 = parseFloat(numbers.pop());
+                numbers.push(num1 * num2);
+            break;
+            case '/':
+                var num1 = parseFloat(numbers.pop());
+                var num2 = parseFloat(numbers.pop());
+                numbers.push(num1 / num2);
+            break;
+        }
+    }
+    document.getElementById("out").value = numbers;
+}
+function del()
+{
+    var textbox = document.getElementById("out");
+    textbox.value = textbox.value.slice(0,-1);
 }

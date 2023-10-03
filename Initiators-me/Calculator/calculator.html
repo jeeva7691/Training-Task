@@ -12,28 +12,27 @@
         <div class="output" >
             <input type="text" id="out">
         </div>
-            <div class="buttscr">
-                <button class="btn" id = "AC">AC</button>
-                <button class="btn">DEL</button>
-                <button class="btn">%</button>
-                <button class="btn">/</button>
-                <button class="btn" id="sev">7</button>
-                <button class="btn">8</button>
-                <button class="btn">9</button>
-                <button class="btn">*</button>
-                <button class="btn">4</button>
-                <button class="btn">5</button>
-                <button class="btn">6</button>
-                <button class="btn">-</button>
-                <button class="btn" id = "one">1</button>
-                <button class="btn" id="Two">2</button>
-                <button class="btn">3</button>
-                <button class="btn" id = "plus"onclick="getInputValue2()">+</button>
-                <button class="btn">0</button>
-                <button class="btn">00</button>
-                <button class="btn">.</button>
-                <button class="btn" onclick= getInputValue() >=</button>
-            </div>
+            <!-- <div class="buttscr"> -->
+                <button class="btn" onclick="printText1()">AC</button>
+                <button class="btn" onclick ="del()">DEL</button>
+                <button class="btn" onclick="printText('%')">%</button>
+                <button class="btn" onclick="printText('/')">/</button>
+                <button class="btn" onclick="printText('7')">7</button>
+                <button class="btn" onclick="printText('8')">8</button>
+                <button class="btn" onclick="printText('9')">9</button>
+                <button class="btn" onclick="printText('*')">*</button>
+                <button class="btn" onclick="printText('4')">4</button>
+                <button class="btn" onclick="printText('5')">5</button>
+                <button class="btn" onclick="printText('6')">6</button>
+                <button class="btn" onclick="printText('-')">-</button>
+                <button class="btn" onclick="printText('1')">1</button>
+                <button class="btn" onclick="printText('2')">2</button>
+                <button class="btn" onclick="printText('3')">3</button>
+                <button class="btn" onclick="printText('+')">+</button>
+                <button class="btn" onclick="printText('0')">0</button>
+                <!-- <button class="btn" onclick="printText('00')">00</button> -->
+                <button class="btn" onclick="printText('.')">.</button>
+                <button class="btn zero" onclick="getinput()">=</button>
     </div>
     <script src="cal.js"></script>
 </body>
