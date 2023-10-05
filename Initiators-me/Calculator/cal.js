@@ -13,13 +13,11 @@ function getinput()
         text = '0'+ text;
     }
     let numbers = text.match(/\d+/g).reverse();
-    // let num1 = numbers.pop();
-    // let num2 = numbers.pop();
     
     let operator = document.getElementById("out").value;
     let opr = operator.match(/[\+\-\*\/]/g).reverse();
     
-        
+
     while(opr.length != 0)
     {
         var oprr = opr.pop();
