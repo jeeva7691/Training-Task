@@ -2,12 +2,6 @@ body
 {
     padding: 0;
     margin: 0;
-    background-image: url("bg1.jpg");
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    background-size:cover;
-    position: relative;
-    height: 100vh;
     cursor:wait;
 }
 .header
@@ -41,10 +35,28 @@ body
     color: aliceblue;
     width:50%;
 }
-.user a
+/* .user a
 {    
     position: absolute;
     right: 90%;
     top: 16px;
     font-size: large;
+} */
+.sec1
+{
+    display: float;
+    display: flex;
+    justify-content: end;
+}
+.photo
+{
+    background-image: url("img.png");
+    background-repeat: no-repeat;
+    border: 2px solid navy;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    float: right;
+    align-items: end;
+    align-content: end;
 }

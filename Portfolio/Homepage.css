@@ -2,6 +2,12 @@ body
 {
     padding: 0;
     margin: 0;
+    background-image: url("bg1.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size:cover;
+    position: relative;
+    height: 100vh;
     cursor:wait;
 }
 .header
@@ -41,4 +47,11 @@ body
     right: 90%;
     top: 16px;
     font-size: large;
+    letter-spacing: 2px;
+    font-family: 'Tangerine', serif;
+    text-shadow: 4px 4px 4px #aaa;
+}
+.header a:active
+{
+    background:blue;
 }
