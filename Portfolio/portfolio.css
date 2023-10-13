@@ -20,6 +20,7 @@ a{
 .navbar
 {
     display: flex;
+    justify-content: center;
     gap : 30px;
     font-size: large;
 }
@@ -71,15 +72,15 @@ div img{
     height: 250px;
     border-radius: 50%;
 }
-h4
+.role
 {
     font-size: 57px;
     font-family: alegreya sans;
 }
  .object
 {
-    margin-top: 10%;
-    margin-left: 10%;
+    margin-top: 5%;
+    margin-left: 20%;
     line-height:1;
     font-weight: bold;
     display: flex;
@@ -108,7 +109,108 @@ h4
     font-weight: bold;
     color: black;
 }
-.edu
+.details
 {
-    font-size: 57px;
+    margin-top:50px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
 }
+#edu
+{
+    font-size: 25px;
+}
+.school
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    text-align: start;
+    margin-top:40px;
+    gap: 50px;
+    font-size: x-large;
+    text-align: start;
+}
+#exp
+{
+    font-size: 25px;
+}
+.vertical-line {
+    width: 2px; 
+    height: 125px; 
+    background-color: #000; 
+    position: relative; 
+    margin: 0 auto; 
+}
+
+.dot {
+    width: 10px; 
+    height: 10px; 
+    background-color: #000; 
+    border-radius: 50%; 
+    position: absolute;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.dot.bottom {
+    top: 100%;
+}
+#intro{
+    padding-right: 30px;
+}
+.skills {
+    text-align: center;
+    margin: 20px;
+}
+.skill{
+    display:flex;
+    justify-content: space-around;
+    margin: 50px;
+    padding-left:70px;
+    font-size: 25px;
+
+}
+.skill-content{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+.web{
+    display: flex;
+    gap:40px;
+    padding-left:130px;
+}
+.programming{
+    display: flex;
+    padding-right: 50px;
+    gap:50px
+}
+svg,i{
+    padding-right: 20px;
+}
+.vertical-line1 {
+    width: 2px; 
+    height: 150px; 
+    background-color: #000; 
+    position: relative; 
+    margin: 0 auto; 
+}
+
+.dot1 {
+    width: 10px; 
+    height: 10px; 
+    background-color: #000; 
+    border-radius: 50%; 
+    position: absolute;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.dot1.bottom1 {
+    top: 100%;
+}
+
