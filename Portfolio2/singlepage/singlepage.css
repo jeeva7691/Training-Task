@@ -1,0 +1,239 @@
+/* body
+{
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    height: 20px;
+} */
+.image
+{
+    background-image: url('https://framerusercontent.com/images/siIhtqjmLUQT5kpy14xIXgIkg.png?scale-down-to=1024');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+    height: 70%;
+}
+.center {
+    display: block;
+    height: 32%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+}
+.r1
+{
+    /* background-color: antiquewhite; */
+    height: 50px;
+    padding: 5px;
+}
+.rc1
+{
+    /* background-color: aqua; */
+    height: 40px;
+    text-align: right;
+}
+.rc2
+{
+    /* background-color: aquamarine; */
+    height: 40px;
+    text-align: right;
+}
+.color
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:larger;
+}
+.rc3
+{
+    /* background-color: aliceblue; */
+    height: 40px;
+    text-align: right;
+}
+.rc4
+{
+    /* background-color: blueviolet; */
+    height: 40px;
+}
+.c2
+{
+    /* background-color: brown; */
+    margin: 5% 5%;
+}
+.r2
+{
+    /* background-color: chartreuse; */
+    height: 50px;
+    padding: 5px;
+    margin: 5px 5px;
+}
+.r2c1
+{
+    /* background-color: burlywood; */
+    height: 40px;
+}
+.r2c2
+{
+    /* background-color: cadetblue; */
+    height: 40px;
+}
+.r2c3
+{
+    /* background-color: chocolate; */
+    height: 40px;
+}
+.r2c4
+{
+    /* background-color: cornflowerblue; */
+    height: 40px;
+}
+.r3
+{
+    /* background-color: crimson; */
+    height: 50px;
+    padding: 5px;
+    margin: 5px 5px;
+}
+.r3c1
+{
+    /* background-color: cyan; */
+    height: 40px;
+    /* border: 2px solid black; */
+}
+.r3c2
+{
+    /* background-color: darkblue; */
+    height: 40px;
+}
+.r3c3
+{
+    /* background-color: darkcyan; */
+    height: 40px;
+}
+.r4
+{
+    /* background-color: darkgoldenrod; */
+    height: 50px;
+    margin: 5px 5px;
+}
+.r5
+{
+    /* background-color: darkgray; */
+    height: 50px;
+    margin: 5px 5px;
+}
+.r6
+{
+    /* background-color: darkgreen; */
+    height: 50px;
+    margin: 5px 5px;
+}
+.r7
+{
+    /* background-color: rgb(244, 219, 219); */
+    height: 50px;
+    margin: 5px 5px;
+}
+.r8
+{
+    /* background-color:darkkhaki; */
+    height: 50px;
+    margin: 5px 5px;
+}
+.r9
+{
+    /* background-color: darkmagenta; */
+    height: 50px;
+    margin: 5px 5px;
+}
+.r10
+{
+    /* background-color: rgb(194, 234, 125); */
+    height: 50px;
+    margin: 5px 5px;
+}
+.r11
+{
+    /* background-color: darkorange; */
+    height: 50px;
+    margin: 5px 5px;
+}
+.r12
+{
+    /* background-color: darkorchid; */
+    height: 50px;
+    padding: 5px;
+    margin: 5px 5px;
+}
+.r12c1
+{
+    /* background-color: darkred; */
+    height: 40px;
+}
+.r12c2
+{
+    /* background-color: darksalmon; */
+    height: 40px;
+}
+.r13
+{
+    /* background-color: darkseagreen; */
+    height: 50px;
+    padding: 5px;
+    margin: 5px 5px;
+}
+.rhi
+{
+    height: 40px;
+}
+.rh
+{
+    height: 50px;
+}
+/* .r13c1
+{
+    background-color: darkslateblue; 
+} */
+/* .r13c2
+{
+     background-color: darkslategray;
+} */
+.r14
+{
+    /* background-color: darkturquoise; */
+    height: 50px;
+    margin: 5px 5px;
+}
+.r15
+{
+    /* background-color: darkviolet; */
+    margin: 5px 5px;
+}
+.r16
+{
+    /* background-color: deeppink; */
+    margin: 5px 5px;
+}
+.r17
+{
+    /* background-color: deepskyblue; */
+    height: 50px;
+    margin: 5px 5px;
+}
+.r18
+{
+    /* background-color: dimgray; */
+    margin: 5px 5px;
+}
+.r19
+{
+    /* background-color: dodgerblue; */
+    margin: 5px 5px;
+}
+.btn
+{
+    background-color: aqua;
+    text-align: center;
+    position: relative;
+    float: right;
+}
