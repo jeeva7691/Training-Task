@@ -1,0 +1,96 @@
+<div class="container mt-5">
+     <form [formGroup]="userForm">
+
+<!-------------------------------------------------------------Name Div -->
+    
+        <div class="form-group">
+            <label for="" class="form-label"> Name  </label>
+                <input type="text" class="form-control" formControlName="name"
+                [class.is-invalid]="form['name'].touched && form['name'].invalid" required maxlength="10" minlength="3">
+                <div>
+                    <p *ngIf="form['name'].touched && form['name'].invalid" class="text-danger">
+                       <span [class.d-none]="!form['name'].errors?.['required']">Name is required</span> 
+                       <span [class.d-none]="!form['name'].errors?.['maxlength']">Maximum characters is 10 only</span> 
+                   </p>
+               </div>   
+            </div>
+
+<!-------------------------------------------------------------Email Div -->
+
+            <div class="form-group">
+                <label for="" class="form-label"> E-mail</label>
+                <input type="text" class="form-control" formControlName="email" [class.is-invalid]="form['email'].touched && form['email'].invalid">
+                <div>
+                    <p *ngIf="form['email'].touched && form['email'].invalid" class="text-danger">
+                       <span [class.d-none]="!form['email'].hasError('required')">Email is required</span> 
+                       <span [class.d-none]="!form['email'].hasError('pattern')">Please enter a valid email</span> 
+                   </p>
+               </div>   
+            </div>
+            
+<!-------------------------------------------------------------Password Div -->
+
+            <div class="form-group">
+                <label for="" class="form-label"> Password </label>
+                <input type="text" class="form-control" formControlName="password" [class.is-invalid]="form['password'].touched && form['password'].invalid">
+                <div>
+                    <p *ngIf="form['password'].touched && form['password'].invalid" class="text-danger">
+                       <span [class.d-none]="!form['password'].hasError('required')">Password is required</span> 
+                       <span [class.d-none]="!form['password'].hasError('pattern')">Please enter a valid password</span> 
+                   </p>
+               </div>   
+            </div>
+
+<!-------------------------------------------------------------Phone_number Div -->
+
+            <div class="form-group">
+                <label for="" class="form-label"> Phone_number </label>
+                <input type="text" class="form-control" formControlName="phonenumber" [class.is-invalid]="form['phonenumber'].touched && form['phonenumber'].invalid">
+                <div>
+                    <p *ngIf="form['phonenumber'].touched && form['phonenumber'].invalid" class="text-danger">
+                       <span [class.d-none]="!form['phonenumber'].hasError('required')">phone_number is required</span> 
+                       <span [class.d-none]="!form['phonenumber'].hasError('pattern')">Please enter a valid phone_Number</span> 
+                   </p>
+               </div>   
+            </div>
+
+<!-------------------------------------------------------------Radio Button Div -->
+            <div class="radio">
+                <label for="">Gender</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                    Male
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                    Female
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                    <label class="form-check-label" for="flexRadioDefault3">
+                    Others
+                    </label>
+                </div>
+            </div>
+
+<!-------------------------------------------------------Check box div -->
+            <div class="form-check check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                <a href="#agree">Agree terms and conditions</a>
+                </label>
+            </div>
+
+<!------------------------------------------------------ Button Div -->
+
+            <div class="button">
+            <button class="btn btn-primary button" (click)="form1()">Send</button>
+            </div>
+        </form>
+    </div>
+
+

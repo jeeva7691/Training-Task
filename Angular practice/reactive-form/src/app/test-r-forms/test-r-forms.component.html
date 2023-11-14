@@ -1,0 +1,104 @@
+<div class="container mt-5">
+    <h2>Student-form (Reactive_forms)</h2>
+    <form [formGroup]="userform">
+<!-----------------------------------------------------First_name div -->
+
+        <div class="form-group mt-4" id="form">
+            <label for="" class="form-label">First_name</label>
+            <input type="text" class="form-control" formControlName="First_name" [class.is-invalid]="form['First_name'].invalid && form['First_name'].touched " [class.is-valid]="form['First_name'].valid">
+                <div *ngIf="form['First_name'].invalid && form['First_name'].dirty  || form['First_name'].touched" class="text-danger">
+                    <span [class.d-none]="!form['First_name'].hasError('required')">First_name is required</span>
+                    <span [class.d-none]="!form['First_name'].hasError('minlength')">please enter a valid name</span>
+                    <span [class.d-none]="!form['First_name'].hasError('maxlength')">only 25 character is allowed</span>
+                    <span [class.d-none]="!form['First_name'].hasError('pattern')">only alphabets allowed  </span>
+                </div>
+        </div>
+
+<!-----------------------------------------------------Last_name div -->
+
+        <div class="form-group" id="form">
+            <label for="" class="form-label">Last_name</label>
+            <input type="text" class="form-control" formControlName="Last_name" [class.is-invalid]="form['Last_name'].invalid && form['Last_name'].touched" [class.is-valid]="form['Last_name'].valid">
+            <div class="errors" *ngIf="form['Last_name'].invalid && form['Last_name'].touched" class="text-danger">
+                    <span [class.d-none]="!form['Last_name'].hasError('required')">Last_name is required</span>
+                    <span [class.d-none]="!form['Last_name'].hasError('minlength')">please enter a valid name</span>
+            </div>
+        </div>
+
+<!------------------------------------------------------ Date-of-Birth -->
+
+        <div class="form-group" id="form">
+            <label for="" class="form-label">Date-of-Birth</label>
+            <input type="date" class="form-control" formControlName="date_of_birth" [class.is-invalid]="form['date_of_birth'].invalid && form['date_of_birth'].touched" [class.is-valid]="form['date_of_birth'].valid">
+            <div class="errors" *ngIf="form['date_of_birth'].invalid && form['date_of_birth'].touched" class="text-danger">
+                    <span [class.d-none]="!form['date_of_birth'].hasError('required')">Date_of_birth is required</span>
+                    <!-- <span [class.d-none]="!form['date-of-birth'].hasError('minlength')">please enter a valid name</span> -->
+            </div>
+        </div>
+
+<!------------------------------------------------------ Native div  -->
+
+        <div class="form-group" id="form">
+            <label for="" class="form-label">Native</label>
+            <input type="text" class="form-control" formControlName="Native" [class.is-invalid]="form['Native'].invalid && form['Native'].touched" [class.is-valid]="form['Native'].valid">
+                <div *ngIf="form['Native'].invalid && form['Native'].dirty  || form['Native'].touched" class="text-danger">
+                    <span [class.d-none]="!form['Native'].hasError('required')">Native is required</span>
+                    <span [class.d-none]="!form['Native'].hasError('pattern')">Native is invalid!</span>
+                </div>
+        </div>
+
+<!-------------------------------------------------------Contact Div -->
+
+        <div class="form-group" id="form">
+            <label for="" class="form-label">Contact Number</label>
+            <input type="text" class="form-control" formControlName="Contact_number" [class.is-invalid]="form['Contact_number'].invalid && form['Contact_number'].touched " [class.is-valid]="form['Contact_number'].valid">
+                <div *ngIf="form['Contact_number'].invalid && form['Contact_number'].dirty  || form['Contact_number'].touched" class="text-danger">
+                    <span [class.d-none]="!form['Contact_number'].hasError('required')">Contact_number is required</span>
+                    <span [class.d-none]="!form['Contact_number'].hasError('pattern')">Contact_number is invalid!</span>
+                </div>
+        </div>
+
+<!-------------------------------------------------------Gender Div -->
+        <div class="form-group gender" id="form">
+            <label for="" class="form-label">Gender </label>
+            <div class="form-check">
+                <input class="form-check-input" value="male" type="radio" formControlName="gender" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                Male
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" value="female" formControlName="gender" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                Female
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" value="others" formControlName="gender" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault3">
+                Others
+                </label>
+            </div>
+            <div *ngIf="form['gender'].invalid && form['gender'].dirty  || form['gender'].touched" class="text-danger">
+               <span [class.d-none]="!form['gender'].hasError('required')">gender is required</span>
+                <!-- <span [class.d-none]="!form['gender'].hasError('pattern')">Contact_number is invalid!</span> -->
+            </div>
+        </div>
+
+<!-------------------------------------------------------Email Div -->
+
+        <div class="form-group" id="form">
+            <label for="" class="form-label">Email</label>
+            <input type="text" class="form-control" formControlName="email" [class.is-invalid]="form['email'].invalid && form['email'].touched " [class.is-valid]="form['email'].valid">
+                <div *ngIf="form['email'].invalid && form['email'].dirty  || form['email'].touched" class="text-danger">
+                    <span [class.d-none]="!form['email'].hasError('required')">Email is required</span>
+                    <span [class.d-none]="!form['email'].hasError('email')">Email address is invalid!</span>
+                </div>
+        </div>
+
+<!------------------------------------------------------ Button div  -->
+        <div class="button"> 
+            <button class="btn btn-primary btn-lg" (click)="save()">send</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,100 @@
+<form #form="ngForm" class="container mt-5">
+        <div class="form-group" id="fname" >
+                <label for="" class="form-label">First Name</label>
+                <input  
+                type="text" 
+                required #fname="ngModel"  
+                name="firstname" 
+                class="form-control" 
+                [class.is-invalid]="(fname.touched || show) && fname.invalid" 
+                [(ngModel)]="data.firstname"
+                pattern="^[A-Za-z ]{1,20}$">
+        <div>
+            <p *ngIf="fname.touched && fname.invalid || show" class="text-danger">
+               <span [class.d-none]="!fname.errors?.['required']">First name is required</span> 
+               <span [class.d-none]="!fname.errors?.['pattern']">Only alphabets allowed / maximum characters is 20 only</span> 
+           </p>
+       </div>   
+        </div>
+        <div class="form-group" id="fname">
+            <label for="" class="form-label">Last Name</label>
+            <input  type="text" required #lname="ngModel"  name="lastname" class="form-control" [class.is-invalid]="(lname.touched || show) && lname.invalid" pattern="^[A-Za-z ]{1,20}$" [(ngModel)]="data.lastname">
+            <div>
+                <p *ngIf="lname.touched && lname.invalid || show" class="text-danger">
+                   <span [class.d-none]="!lname.errors?.['required']">Last name is required</span> 
+                   <span [class.d-none]="!lname.errors?.['pattern']">Only alphabets allowed / maximum charcters is 20 only</span> 
+               </p>
+           </div>   
+    </div>
+    <div class = "form-group" id="fname">
+        <label for="" class="form-label">Age</label>
+        <input  type="number" required #age="ngModel"  name="age" class="form-control" [class.is-invalid]="(age.touched || show) && age.invalid" pattern="^\d{1,3}$" [(ngModel)]="data.age">
+        <div>
+            <p *ngIf="age.touched && age.invalid || show" class="text-danger">
+               <span [class.d-none]="!age.errors?.['required']">Age is required</span> 
+               <span [class.d-none]="!age.errors?.['pattern']">please enter a valid age </span> 
+           </p>
+       </div>   
+    </div>
+    <div class="form-group" id="fname">
+        <label for="" class="form-label">Phone Number</label>
+        <input  type="number" required #phno="ngModel"  name="Phone_number" class="form-control" [class.is-invalid]="phno.touched && phno.invalid || show" pattern="^\d{10}$" [(ngModel)]="data.phone_number">
+        <div>
+             <p *ngIf="phno.touched && phno.invalid || show" class="text-danger">
+                <span [class.d-none]="!phno.errors?.['required']">Phone number is required</span> 
+                <span [class.d-none]="!phno.errors?.['pattern']">Please enter a valid mobile number</span> 
+            </p>
+        </div>
+    </div>
+    <div class="form-group" id="fname">
+        <label for="" class="form-label">Salary</label>
+        <input  type="number" required #sal="ngModel"  name="salary" class="form-control" [class.is-invalid]="(sal.touched || show) && sal.invalid" [(ngModel)]="data.sal">
+        <div>
+        <p *ngIf="(sal.touched || show) && sal.invalid" class="text-danger">Salary is required</p>
+        </div>
+    </div>
+    <div class="form-group" id="fname">
+        <label for="" class="form-label">Department</label>
+        <select class="form-select" aria-label="Default select example" required #dept="ngModel" name="dept" [class.is-invalid]="(dept.touched || show) && dept.invalid"  [(ngModel)]="data.dept">
+            <option selected>Select your department</option>
+            <option value="1">Finance</option>
+            <option value="2">Development</option>
+            <option value="3">Designing</option>
+            <option value="4">Cyber-security</option>
+            <option value="5">Ai team</option>
+          </select>
+        <div>
+        <p *ngIf="(dept.touched || show) && dept.invalid" class="text-danger">Please choose your department</p>
+        </div>
+    </div>
+    <div class="col-12" id="fname">
+        <label id="gender" for="">Gender:</label>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" value="Male" [(ngModel)]="data.gender" required #maleRadio="ngModel" id="inlineRadio1" [class.is-invalid]="(maleRadio.touched && maleRadio.invalid) || show">
+            <label class="form-check-label" for="inlineRadio1">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" value="Female" [(ngModel)]="data.gender" required #femaleRadio="ngModel"  id = "inlineRadio2" [class.is-invalid]="(femaleRadio.touched && femaleRadio.invalid) || show">
+            <label class="form-check-label" for="inlineRadio2">Female</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" value="Others" [(ngModel)]="data.gender" required #othersRadio="ngModel" id="inlineRadio3" [class.is-invalid]="(othersRadio.touched && othersRadio.invalid) || show">
+            <label class="form-check-label" for="inlineRadio3">Others</label>
+        </div>
+        <p *ngIf="(maleRadio.touched && !maleRadio.valid) || (femaleRadio.touched && !femaleRadio.valid ) || (othersRadio.touched && !othersRadio.valid) || show" class="text-danger">Gender is required</p>
+    </div>
+    <div>
+        <div class="form-check" id="fname">
+            <input class="form-check-input" #check="ngModel" name="checkbox" type="checkbox" value="" id="flexCheckDefault fname" [(ngModel)]="data.check" required>
+            <label class="form-check-label" for="flexCheckDefault">
+              <a href="#">Agree terms and condition</a>
+            </label>
+            <div>
+                <p *ngIf="(check.touched || show) && check.invalid" class="text-danger">please agree terms and condition</p>
+            </div>
+          </div>
+    </div>
+        <div id="fname" class="button">
+            <button class="btn btn-success" (click)="print()">Send</button>
+        </div>
+</form>

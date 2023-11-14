@@ -1,0 +1,40 @@
+.container
+{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 50%;
+    h2
+    {
+            width: 100%;
+            text-align: center;
+    };
+    #form
+    {
+            position: relative;
+            padding-bottom: 40px;
+            // background-color: antiquewhite;
+        span
+        {
+            position: absolute;
+            
+        };
+    }
+    .button
+    {
+        display: flex;
+        justify-content: flex-end;
+    };
+    .gender
+    {
+        display: grid;
+        grid-template-columns: repeat(4,100px);
+        
+    };
+    
+}
+.form-check{
+// background-color: red;
+margin-top: 40px;
+margin-left: -100px;
+}
